@@ -13,6 +13,19 @@ This tool can have multiple applications, including:
     npm install --save-dev htmlchecker
 ```
 
+## Usage
+
+In your package.json
+
+```
+    {
+        scripts: {
+            "test:html": "HTMLChecker"
+        }
+    }
+```
+
+
 ## Docs
 
 [TODO]
