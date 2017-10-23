@@ -14,9 +14,6 @@
     "url": "git://github.com/vytch/htmlchecker.git"
   },
   "keywords": [],
-  "bin": {
-    "HTMLChecker": "bin/index.js"
-  },
   "licence": "MIT",
   "dependencies": {
     "casperjs": "^1.1.4",
