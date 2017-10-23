@@ -1,0 +1,28 @@
+{
+  "name": "htmlchecker",
+  "version": "0.1.0",
+  "description": "Unit-testing tool for HTML",
+  "engine": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Vy HOANG",
+    "email": "vytch1906@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vycth/htmlchecker.git"
+  },
+  "keywords": [
+  ],
+  "files": ["lib"],
+  "bin": {
+    "HTMLChecker": "bin/index.js"
+  },
+  "licence": "MIT",
+  "dependencies": {
+    "phantomcss": "^1.1.2",
+    "shelljs": "^0.7.8",
+    "underscore": "~1.7.0"
+  }
+}
