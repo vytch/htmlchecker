@@ -1,6 +1,6 @@
 {
   "name": "htmlchecker",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Unit-testing tool for HTML",
   "engine": {
     "node": ">=4.0.0"
@@ -20,6 +20,7 @@
   "licence": "MIT",
   "dependencies": {
     "casperjs": "^1.1.4",
+    "path": "^0.12.7",
     "phantomjs": "^2.1.7",
     "shelljs": "^0.7.8",
     "underscore": "~1.7.0"
