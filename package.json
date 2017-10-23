@@ -15,7 +15,7 @@
   },
   "keywords": [],
   "files": [
-    "lib"
+    "lib", "bin"
   ],
   "bin": {
     "HTMLChecker": "bin/index.js"
