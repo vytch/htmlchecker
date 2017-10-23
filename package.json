@@ -14,9 +14,6 @@
     "url": "git://github.com/vytch/htmlchecker.git"
   },
   "keywords": [],
-  "files": [
-    "lib", "bin"
-  ],
   "bin": {
     "HTMLChecker": "bin/index.js"
   },
