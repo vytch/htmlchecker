@@ -1,6 +1,6 @@
 {
   "name": "htmlchecker",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Unit-testing tool for HTML",
   "engine": {
     "node": ">=4.0.0"
@@ -14,6 +14,9 @@
     "url": "git://github.com/vytch/htmlchecker.git"
   },
   "keywords": [],
+  "bin": {
+    "HTMLChecker": "bin/index.js"
+  },
   "licence": "MIT",
   "dependencies": {
     "casperjs": "^1.1.4",
