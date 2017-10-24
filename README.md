@@ -17,7 +17,7 @@ This tool can have multiple applications, including:
 
 In your package.json, you can create a script
 
-```
+```Javasdcript
     {
         scripts: {
             "test:html": "HTMLChecker"
@@ -64,7 +64,7 @@ Each location has 2 properties:
 - url: the url of the page.
 
 Ex: 
-```
+```Javasdcript
     { 
         "name": "My example", 
         "url": "http://localhost:5001" 
@@ -77,7 +77,7 @@ Ex:
 An array of selectors you DO NOT want to see on your pages (ex: mispelled classes, deprecated classes or combination of classes).
 
 Ex:
-```
+```Javasdcript
     "forbiddenSelectors": [
         ".test1", ".test2"
     ]
@@ -85,26 +85,26 @@ Ex:
 
 Will fail the test with:
 
-```
+```html
     <div class="test1">Blah</div> 
     <!-- Fails -->
 ```
 or:
-```
+```html
     <div class="test2">Blah</div> 
     <!-- Fails -->
 ```
 
 You can also have more complex selectors:
 
-```
+```Javasdcript
     "forbiddenSelectors": [
         ".test1 .test2"
     ]
 ```
 
 Will fail if you have:
-```
+```html
     <div class="test1">
         <div class="test2">Blah</div> 
     </div> 
@@ -116,7 +116,7 @@ Will fail if you have:
 You may have several configuration files in your project. 
 Here is what you can do in your package.json:
 
-```
+```Javasdcript
     {
         scripts: {
             "test:html": "HTMLChecker --config=alternateConfig.js"
@@ -170,13 +170,13 @@ In the htmlChecker.js, all tests should be written in the specs section:
 
 #### Testing children
 
-```
+```Javasdcript
     check.testHasChildren(moduleSelector, childSelector);
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('.my-selector', function(moduleSelector){
         check.testHasChildren(moduleSelector, '.my-child-selector');
     });
@@ -190,13 +190,13 @@ Returns true if:
 
 #### Testing only one child
 
-```
+```Javasdcript
     check.testHasOnlyOneChild(moduleSelector, childSelector);
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('.my-selector', function(moduleSelector){
         check.testHasOnlyOneChild(moduleSelector, '.my-child-selector');
     });
@@ -219,13 +219,13 @@ Returns false if:
 
 #### Testing empty attribute
 
-```
+```Javasdcript
     check.testHasEmptyAttribute(moduleSelector, attributeName);
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('.my-img-selector', function(moduleSelector){
         check.testHasEmptyAttribute(moduleSelector, 'alt');
     });
@@ -239,13 +239,13 @@ Returns true if:
 
 #### Testing attribute value
 
-```
+```Javasdcript
     check.testOneOfAttributeValue(selector, attributeName, arrayAttributesValue);
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('input.my-input', function(moduleSelector){
         check.testHasAttributeNotMatching(moduleSelector, 'type', ['checkbox', 'radio']);
     });
@@ -255,13 +255,13 @@ Ex:
 
 #### Testing attribute not matching regex
 
-```
+```Javasdcript
     check.testHasAttributeNotMatching(selector, attributeName, regularExpression)
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('.my-selector', function(moduleSelector){
         check.testHasAttributeNotMatching(moduleSelector, 'my-attr', /^\[.*\]$/);
     });
@@ -269,13 +269,13 @@ Ex:
 
 #### Testing attribute  matching regex
 
-```
+```Javasdcript
     check.testHasAttributeMatching(selector, attributeName, regularExpression)
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('.my-selector', function(moduleSelector){
         check.testHasAttributeMatching(moduleSelector, 'my-attr', /^\[.*\]$/);
     });
@@ -283,13 +283,13 @@ Ex:
 
 #### Testing class
 
-```
+```Javasdcript
     check.testHasClass(selector, className);
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('button', function(moduleSelector){
         check.testHasClass(moduleSelector, 'btn');
     });
@@ -304,13 +304,13 @@ Returns true if:
 
 #### Testing one of class
 
-```
+```Javasdcript
     check.testHasOneOfThoseClass(selector, classList);
 ```
 
 Ex:
 
-```
+```Javasdcript
     suite.add('.my-selector', function(moduleSelector){
         check.testHasOneOfThoseClass(selector, ['class1','class2','class3']);
     });
