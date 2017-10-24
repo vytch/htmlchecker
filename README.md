@@ -184,7 +184,7 @@ Ex:
 
 Returns true if:
 
-```
+```html
     <div class="my-selector"><div class="my-child-selector"></div></div>
 ```
 
@@ -204,13 +204,13 @@ Ex:
 
 Returns true if:
 
-```
+```html
     <div class="my-selector"><div class="my-child-selector"></div></div>
 ```
 
 Returns false if:
 
-```
+```html
     <div class="my-selector">
         <div class="my-child-selector"></div>
         <div class="my-child-selector"></div>
@@ -233,7 +233,7 @@ Ex:
 
 Returns true if:
 
-```
+```html
     <img class="my-img-selector" alt="" src="img.png" />
 ```
 
@@ -297,7 +297,7 @@ Ex:
 
 Returns true if:
 
-```
+```html
     <button class="btn" type="button">Ready<button>
 
 ```
@@ -318,7 +318,7 @@ Ex:
 
 Returns true for all the example below:
 
-```
+```html
     <div class="my-selector class1"></div>
     <div class="my-selector class2"></div>
     <div class="my-selector class3"></div>
