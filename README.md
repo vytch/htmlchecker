@@ -1,13 +1,13 @@
 # htmlchecker
-Think about it as unity-test applied to HTML.
+Think about it as unit-test applied to HTML.
+We use CSS selector to get DOM elements and then we can execute tests if we find them.
 
-HTMLchecker is a tool that will allow you to create test automation for your HTML.
 This tool can have multiple applications, including:
 
-- Checking if your HTML respect basic rules for accessibility.
-- Checking if your HTML respect the requirements of your javascript components.
-- Ensure that code changes done in the hTML are done everywhere in your project.
-- Ensure that HTML pattern that you don't want are not in your projects.
+- Checking if your HTML respect basic rules for accessibility (for attribute, alt attribute on img etc.).
+- Checking if your HTML respect the requirements of your javascript components (no missing elements or no missing attributes).
+- Ensure that code changes done in the HTML are done everywhere in your project (not just on the page you are working).
+- Ensure that HTML pattern that you don't want are not in your projects (no more .l-left, .l-right in a mobile first project).
 
 ## installation
 
@@ -157,9 +157,8 @@ In the htmlChecker.js, all tests should be written in the specs section:
 
     var config = {
         "specs": function(suite, check){
-            suite.add('label', function(selector){
-                check.hasAttr(selector , 'for');
-                check.hasMatchingFor(selector);
+            suite.add('<selector>', function(moduleSelector){
+                // tests matching the selector are written here
             });
         },
         ...
