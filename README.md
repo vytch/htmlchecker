@@ -5,7 +5,9 @@ HTMLchecker is a tool that will allow you to create test automation for your HTM
 This tool can have multiple applications, including:
 
 - Checking if your HTML respect basic rules for accessibility.
-- Checking if your HTML respect the requireements of your javascript components.
+- Checking if your HTML respect the requirements of your javascript components.
+- Ensure that code changes done in the hTML are done everywhere in your project.
+- Ensure that HTML pattern that you don't want are not in your projects.
 
 ## installation
 
