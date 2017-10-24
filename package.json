@@ -1,6 +1,6 @@
 {
   "name": "htmlchecker",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Unit-testing tool for HTML",
   "engine": {
     "node": ">=4.0.0"
